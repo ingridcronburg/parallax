@@ -23,3 +23,6 @@ Similarly, a Sprite can be added to the app by creating a sprite element and spe
 <Sprite name="bird" frames="14" resolution="20" layer="3"/>
 ```
 Sprites will also need some additional configuration in the Sass file.
+
+View the live demo here:
+http://parallax.ingridcronburg.com
