@@ -3,13 +3,13 @@ var sass = require('gulp-sass');
 var webpack = require('gulp-webpack');
 
 gulp.task('sass', function () {
-  return gulp.src('./css/**/*.scss')
+  return gulp.src('./public/css/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./css/**/*.scss', ['sass']);
+  gulp.watch('./public/css/**/*.scss', ['sass']);
 });
 
 let config = {
@@ -39,17 +39,17 @@ let config = {
 };
 
 gulp.task('webpack', function() {
-  return gulp.src('./js/app.js')
+  return gulp.src('./public/js/app.js')
     .pipe(webpack(config))
-    .pipe(gulp.dest('./js/dist/'));
+    .pipe(gulp.dest('./public/js/dist/'));
 });
 
 gulp.task('webpack:watch', function() {
   config.watch = true;
 
-  return gulp.src('./js/app.js')
+  return gulp.src('./public/js/app.js')
     .pipe(webpack(config))
-    .pipe(gulp.dest('./js/dist/'));
+    .pipe(gulp.dest('./public/js/dist/'));
 });
 
 gulp.task('default', ['sass', 'webpack']);
