@@ -1,0 +1,65 @@
+#root {
+  margin: auto;
+  width: 1200px; }
+
+.parallax {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .parallax .layer {
+    margin: auto;
+    width: 100%; }
+
+.bird {
+  position: absolute;
+  top: 400px;
+  left: -200px;
+  width: 175px;
+  height: 170px;
+  background: url("./../img/bird.png") no-repeat; }
+
+.bird1 {
+  background-position: 0px 0px; }
+
+.bird2 {
+  background-position: -182px 0px; }
+
+.bird3 {
+  background-position: -364px 0px; }
+
+.bird4 {
+  background-position: -546px 0px; }
+
+.bird5 {
+  background-position: -728px 0px; }
+
+.bird6 {
+  background-position: 0px -170px; }
+
+.bird7 {
+  background-position: -182px -170px; }
+
+.bird8 {
+  background-position: -364px -170px; }
+
+.bird9 {
+  background-position: -546px -170px; }
+
+.bird10 {
+  background-position: -728px -170px; }
+
+.bird11 {
+  background-position: 0px -340px; }
+
+.bird12 {
+  background-position: -182px -340px; }
+
+.bird13 {
+  background-position: -364px -340px; }
+
+.bird14 {
+  background-position: -546px -340px; }
+
+.bird15 {
+  background-position: -728px -340px; }

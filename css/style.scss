@@ -1,0 +1,33 @@
+#root {
+  margin: auto;
+  width: 1200px;
+}
+
+.parallax {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .layer {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.bird {
+  position: absolute;
+  top: 400px;
+  left: -200px;
+  width: 175px;
+  height: 170px;
+  background: url('./../img/bird.png') no-repeat;
+}
+
+@for $i from 0 through 2 {
+  @for $j from 0 through 4 {
+    .bird#{($i * 5) + ($j + 1)} {
+      background-position: ($j * -182) + px ($i * -170) + px;
+    }
+  }
+}
